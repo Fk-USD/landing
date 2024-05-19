@@ -85,8 +85,26 @@ nav ul li a {
     margin: 0 auto;
 }
 
-.main-character {
+.main-character-container {
+    position: relative;
     width: 45%;
+}
+
+.white-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    clip-path: polygon(10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%, 0 20%);
+    z-index: 0;
+}
+
+.main-character {
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .home-content {
