@@ -1,70 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FKUSD</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FKUSD - Unstable Coin</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for section edges */
+    section {
+      border-radius: 0; /* Ensures straight edges */
+    }
+
+    /* Additional custom styles */
+    .rounded-section {
+      border-radius: 8px; /* Example for adding rounded corners if needed */
+    }
+
+    /* Example of additional customizations */
+    .custom-shadow {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <img src="images/logo.png" alt="FKUSD Logo" class="logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#launchpad">Launchpad</a></li>
-                <li><a href="#tokenomics">Tokenomics</a></li>
-                <li><a href="#utility">Utility</a></li>
-                <li><a href="#socials">Socials</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-900 text-white">
 
-    <section id="home" class="home">
-        <div class="home-container">
-            <div class="main-character-container">
-                <div class="gradient-bg"></div>
-                <img src="images/main-character.png" alt="Character" class="main-character">
-            </div>
-            <div class="home-content">
-                <img src="images/logo.png" alt="FKUSD Logo" class="home-logo">
-                <h1>FKUSD</h1>
-                <p class="subtitle">UNSTABLE COIN</p>
-                <p>LAUNCHING SOON ON <span class="highlight">FOMO BULL CLUB</span></p>
-                <div class="buttons">
-                    <button class="buy-btn">BUY FKUSD</button>
-                    <button class="join-btn">Join Telegram</button>
-                </div>
-            </div>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="/images/logo.png" alt="FKUSD Logo" class="h-10 mr-2">
+        <h1 class="text-3xl font-bold">FKUSD</h1>
+      </div>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#launchpad" class="hover:text-yellow-400">Launchpad</a></li>
+        <li><a href="#tokenomics" class="hover:text-yellow-400">Tokenomics</a></li>
+        <li><a href="#utility" class="hover:text-yellow-400">Utility</a></li>
+        <li><a href="#socials" class="hover:text-yellow-400">Socials</a></li>
+        <li><a href="#faq" class="hover:text-yellow-400">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="container mx-auto py-20 text-center">
+    <h2 class="text-5xl font-bold">FKUSD</h2>
+    <p class="mt-4 text-2xl">UNSTABLE COIN</p>
+    <p class="mt-4">Launching Soon on FOMO Bull Club</p>
+    <a href="#" class="mt-8 inline-block bg-yellow-500 text-black py-2 px-4 rounded">BUY FKUSD</a>
+    <a href="#" class="mt-8 inline-block bg-blue-500 py-2 px-4 rounded">Join Telegram</a>
+    <div class="mt-8">
+      <img src="/images/main-character.png" alt="FKUSD Image" class="mx-auto">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-800 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">About FKUSD</h2>
+      <p class="mt-4 max-w-2xl mx-auto">Dubbed the “UNSTABLE COIN,” $FKUSD humorously embodies the unpredictable thrill of the crypto space, proudly wearing its volatility as a badge of honor.</p>
+      <p class="mt-4 max-w-2xl mx-auto">$FKUSD crashes the money party, saying "screw you" to regular cash! It's the bad boy of crypto, all about decentralization and being real. No rug pulls here, just straight-up gangsta ownership by the people. So, ditch the boring cash, join the FKUSD crew, and let's hustle our way to crypto riches like true bosses!</p>
+      <a href="#" class="mt-8 inline-block bg-green-500 py-2 px-4 rounded">Join Community</a>
+      <div class="mt-8">
+        <img src="/images/logo.png" alt="About FKUSD Image" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Launchpad Section -->
+  <section id="launchpad" class="container mx-auto py-20 text-center">
+    <h2 class="text-4xl font-bold">Launchpad</h2>
+    <p class="mt-4 max-w-2xl mx-auto">Yo, $FKUSD is hitting the streets on FOMO Bull Club launchpad, straight up! FOMO BULL CLUB keeps it real with transparent, decentralized, and unruggable launches, no cap. We're all about security and steady growth, building a crew where every meme coin can hustle and shine, ya feel?</p>
+    <a href="#" class="mt-8 inline-block bg-blue-500 py-2 px-4 rounded">Read More</a>
+    <div class="mt-8">
+      <img src="/images/bull-character.png" alt="Launchpad Image" class="mx-auto">
+    </div>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="bg-gray-800 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Tokenomics</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-700 p-6 rounded">
+          <h3 class="text-2xl font-bold">SYMBOL</h3>
+          <p class="mt-4">$FKUSD</p>
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="about-container">
-            <div class="about-content">
-                <h2>About $FKUSD</h2>
-                <p>Dubbed the "UNSTABLE COIN," $FKUSD humorously embodies the unpredictable thrill of the crypto space, proudly wearing its volatility as a badge of honor.</p>
-                <p>FKUSD crashes the money party, saying "screw you" to regular cash! It's the bad boy of crypto, all about decentralization and being real. No rug pulls here, just straight-up gangsta ownership by the people. So, ditch the boring cash, join the FKUSD crew, and let's hustle our way to crypto riches like true bosses!</p>
-                <button class="community-btn">Join Community</button>
-            </div>
-            <img src="images/logo.png" alt="FKUSD Logo" class="about-logo">
+        <div class="bg-gray-700 p-6 rounded">
+          <h3 class="text-2xl font-bold">TOKEN ADDRESS</h3>
+          <p class="mt-4">HhJpBhRRn4g56VsyLuT8DL5Bv31HkXqsrahTTUCZeZg4</p>
         </div>
-    </section>
-
-    <section id="launchpad" class="launchpad">
-        <div class="launchpad-container">
-            <img src="images/bull-character.png" alt="Bull Character" class="bull-character">
-            <div class="launchpad-content">
-                <h2>Launchpad</h2>
-                <p>Yo, $FKUSD is hitting the streets on FoMo Bull Club launchpad, straight up! FOMO BULL CLUB keeps it real with transparent, decentralized, and unruggable launches, no cap. We're all about security and steady growth, building a crew where every meme coin can hustle and shine, ya feel?</p>
-                <button class="read-more-btn">Read More</button>
-            </div>
+        <div class="bg-gray-700 p-6 rounded">
+          <h3 class="text-2xl font-bold">TAX</h3>
+          <p class="mt-4">1%</p>
         </div>
-    </section>
+        <div class="bg-gray-700 p-6 rounded">
+          <h3 class="text-2xl font-bold">SUPPLY</h3>
+          <p class="mt-4">10 BILLION</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded">
+          <h3 class="text-2xl font-bold">LP STAKING ON UNISWAP</h3>
+          <p class="mt-4">Rolling with the homies and stacking those tokens like a true baller, straight up and score up to 1000% APY by being an early LP provider for the $FKUSD/$ETH pools, talk about making those gains rain!</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded">
+          <h3 class="text-2xl font-bold">ONE SIDED STAKING</h3>
+          <p class="mt-4">No extra ETH? No problem, fam! Stack those gains solo with $FKUSD, snagging up to 100% APY hassle-free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
+  <!-- Utility Section -->
+  <section id="utility" class="container mx-auto py-20 text-center">
+    <h2 class="text-4xl font-bold">Utility</h2>
+    <p class="mt-4 max-w-2xl mx-auto">Tap like your mama told you, Just a tap away from making it rain in the crypto game. Hustling smart and living large, join the party.</p>
+    <a href="#" class="mt-8 inline-block bg-yellow-500 text-black py-2 px-4 rounded">JOIN</a>
+    <div class="mt-8">
+      <img src="path/to/utility-image.jpg" alt="Utility Image" class="mx-auto">
+    </div>
+  </section>
+
+  <!-- Socials Section -->
+  <section id="socials" class="bg-gray-800 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Socials</h2>
+      <p class="mt-4 max-w-2xl mx-auto">Stay plugged into the game, follow $FKUSD on socials – where the gangsters of crypto lay down the law.</p>
+      <div class="mt-8">
+        <img src="path/to/socials-image.jpg" alt="Socials Image" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="container mx-auto py-20 text-center">
+    <h2 class="text-4xl font-bold">FAQs</h2>
+    <div class="mt-8 max-w-2xl mx-auto">
+      <p class="mt-4">How do I buy and sell $FKUSD?</p>
+      <p class="mt-4">How can I participate in the $FKUSD LAUNCH?</p>
+      <p class="mt-4">What are the key use cases of $FKUSD?</p>
+      <p class="mt-4">How does $FKUSD ensure privacy and security?</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <!-- Footer -->
+<footer class="bg-gray-800 py-20 text-center text-white">
+    <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+        <h2 class="text-3xl font-bold">Our LINKS</h2>
+        <ul class="mt-4">
+            <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+            <li><a href="#launchpad" class="hover:text-yellow-400">Launchpad</a></li>
+            <li><a href="#tokenomics" class="hover:text-yellow-400">Tokenomics</a></li>
+            <li><a href="#partners" class="hover:text-yellow-400">Partners</a></li>
+            <li><a href="#utility" class="hover:text-yellow-400">Utility</a></li>
+            <li><a href="#faq" class="hover:text-yellow-400">FAQ’s</a></li>
+        </ul>
+        </div>
+        <div class="mb-6 md:mb-0">
+        <h2 class="text-3xl font-bold">Our SOCIALS</h2>
+        <ul class="mt-4">
+            <li><a href="#" class="hover:text-yellow-400">Twitter</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Telegram</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Discord</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Reddit</a></li>
+        </ul>
+        </div>
+        <div class="mb-6 md:mb-0">
+        <h2 class="text-3xl font-bold">DISCLAIMER</h2>
+        <p class="mt-4 max-w-xs">Join the $FKUSD crew and crash the cash party! We Don't Need No Regulation....Ditch boring money, embrace the chaos, and let's hustle to crypto riches like true bosses. No rug pulls, just pure gangsta ownership!</p>
+        </div>
+    </div>
+    <div class="mt-8">
         <p>&copy; 2024 FKUSD. All rights reserved.</p>
-    </footer>
+    </div>
+    </div>
+</footer>
+  
+
 </body>
 </html>
